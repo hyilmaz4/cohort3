@@ -1,0 +1,53 @@
+integer myNumber=52;
+long myNumber2=56325898774566221l;
+decimal myNumber3=2.63;
+double myNumber4=5.65245665545;
+
+system.debug('Tamsayı:' + myNumber);
+system.debug('Uzun sayı:' + myNumber2);
+system.debug('Noktalı sayı:' + myNumber3);
+system.debug('Noktalı uzun sayı:' + myNumber4);
+
+
+String name='sAleSForCE in DeVELopER CLARUSWAY';
+System.debug(name);
+System.debug(name.capitalize());
+System.debug(name.toUppercase());
+System.debug(name.toLowercase());
+System.debug(name.Length());
+System.debug(name.replace('CLARUSWAY','TRİFORCİA'));
+System.debug(name.reverse());
+
+boolean comeIn; //personel come or no
+//system.debug(comeIn);
+System.debug(comeIn);
+comeIn=true;
+/*System.debug(comeIn);
+comeIn=false;*/
+System.debug(comeIn);
+system.debug('personel come in?' + comeIn);
+
+Integer x=26;
+    Decimal y=6.15;
+Decimal z=x+y;
+    System.debug(z);
+// kar elde etme örneği
+Decimal Alis=59.65;
+Decimal Satis=83.45;
+    Decimal Kar= Satis-Alis;
+system.debug('Kar durumu' + ' : ' + Kar);
+
+
+Decimal V=55.18;
+Decimal F=70.45;
+Decimal sonuc=(F*0.6)+(V*0.4);
+System.debug('not durumu:'+' ' +sonuc);
+
+string name='hüseyin';
+integer age=41;
+Decimal salary=5.500;
+string mail='hyilmaz_46@hotail.com';
+system.debug(name);
+system.debug(age);
+system.debug(salary);
+system.debug(mail);

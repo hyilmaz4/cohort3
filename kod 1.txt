@@ -1,0 +1,90 @@
+string sentences='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'; 
+
+system.debug(sentences.split('\\.'));
+system.debug(sentences.split('\\.')[0]);
+system.debug(sentences.split('\\.')[1]);
+system.debug(sentences.split('\\.')[2]);
+
+system.debug(sentences.split('dummy'));
+system.debug(sentences.split('dummy')[0]);
+system.debug(sentences.split('dummy')[1]);
+
+
+string welcome='I\'m hüseyin';
+system.debug(welcome);
+
+string welcome='I\'m hüseyin. \n I\'m salesforce admin.\n';
+welcome+='I\'m developer student.\n';
+welcome+='I\'m trailhead trainer.';
+welcome+='OK!';
+system.debug(welcome.split('\n'));
+system.debug(welcome.split('\n')[0]);
+system.debug(welcome.split('\n')[1]);
+system.debug(welcome.split('\n')[2]);
+system.debug(welcome.split('\n')[3]);
+
+
+string code='123';
+
+string prodCode = code.leftPad(10,'0');
+string prodCodeFull = prodCode.leftPad(13,'SF-');
+system.debug(prodCode);
+
+system.debug(prodCodeFull);
+
+system.debug(code.length());
+system.debug(prodCode.length());
+system.debug(prodCodeFull.length());
+
+integer coder=456;
+
+string prodCoder = string.Valueof(coder).leftPad(5,'0');
+string prodCoderFull = prodCoder.leftPad(10,'SF-');
+system.debug(prodCoder);
+
+system.debug(prodCoderFull);
+
+system.debug(string.Valueof(coder).length());
+system.debug(prodCoder.length());
+system.debug(prodCoderFull.length());
+
+
+string code='123';
+
+string prodCode = code.leftPad(10,'0');
+string prodCodeFull = prodCode.leftPad(13,'SF-');
+string prodCodeFullVarition = prodCodeFull.rightPad(18, 'ABC');
+system.debug(prodCode);
+system.debug(prodCodeFull);
+system.debug(code.length());
+system.debug(prodCode.length());
+system.debug(prodCodeFull.length());
+system.debug(prodCodeFullVarition);
+system.debug(prodCodeFullVarition.countmatches('0'));
+
+integer coder=456;
+
+string prodCoder = string.Valueof(coder).leftPad(5,'0');
+string prodCoderFull = prodCoder.leftPad(10,'SF-');
+system.debug(prodCoder);
+
+system.debug(prodCoderFull);
+
+system.debug(string.Valueof(coder).length());
+system.debug(prodCoder.length());
+system.debug(prodCoderFull.length());
+
+
+string code='SF-00000055445001';
+string xcode=code.split('-')[1];
+
+system.debug(code);
+system.debug(xcode);
+system.debug(xcode.left(10));
+
+//system.debug()
+
+integer ycode=integer.valueof(xcode.left(10));
+
+system.debug('string:' + xcode.left(10));
+system.debug('integer:' + ycode);
